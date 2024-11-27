@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html lang="ES">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Prueba 2. Condiciones</title>
 </head>
+
 <body>
-    <section id="firstImage" class="firstImage">
-        <img src="./assets/img/Portada-articulo-750x450px-1-1.jpg" alt="">
+    <section class="primeraPregunta">
+        <h2>Primera Pregunta</h2>
+        <h4>Haz Click en la Imagen</h4>
+        <img id='primeraImagen' src="./assets/img/Portada-articulo-750x450px-1-1.jpg" alt="">
     </section>
 
-    <section>
+    <section class="segundaPregunta">
+        <h2>Segunda Pregunta</h2>
+        <h4>Solo puedes llevar 10 Stickers</h4>
         <div class="container">
             <div class="stickerCard">
                 <img src="./assets/img/goku_normal.webp" alt="Goku">
-                <input name="salario-anterior" id="salario-anterior">
+                <input  id="cantidadGoku">
             </div>
             <div class="stickerCard">
-                <img src="./assets/img/picolo_normal.webp" alt="Freezer">
-                <input name="salario-anterior" id="salario-anterior">
+                <img src="./assets/img/picolo_normal.webp" alt="Picolo">
+                <input  id="cantidadPicolo">
             </div>
             <div class="stickerCard">
                 <img src="./assets/img/vegeta_normal.webp" alt="Vegeta">
-                <input name="salario-anterior" id="salario-anterior">
+                <input  id="cantidadVegeta">
             </div>
         </div>
         <div class="button">
-            <label for="cantidadSticker"> asdas </label>
-            <button>Verificar</button>
+            <label id="cantidadSticker"></label>
+            <button id="botonSegundaPregunta" class="boton">Verificar</button>
         </div>
     </section>
+    <section class="terceraPregunta">
+        <h2>Tercera Pregunta</h2>
+        <h4>Ingresa la contraseña</h4>
+        <div class="select">
+            <select  id="primerNumero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+            </select>
+            <select  id="segundoNumero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select  id="tercerNumero">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+        </div>
+        <p id="parrafoContraseña"></p>
+        <button id="botonTerceraPregunta" class="boton">Ingresar</button>
+    </section>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
