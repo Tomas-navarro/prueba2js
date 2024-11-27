@@ -1,0 +1,3 @@
+let contadorPrimerSticker=0
+let contadorSegundoSticker=0
+let contadorTercerSticker=0
